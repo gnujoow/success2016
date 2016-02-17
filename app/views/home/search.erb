@@ -1,2 +1,18 @@
 <%= @sbjtId %>
-<%= @result %>
+<br>
+
+
+<% for i in 1..4 %>
+	<%= i %>학년
+	빈자리<%= @avail[i] %><br>
+<% end %>
+<!--
+<%= @url %> 
+
+<br>
+	<%= @apply %><br>
+	<%= @capacity %><br>
+	빈자리<%= @avail %><br>
+<br>
+
+-->
