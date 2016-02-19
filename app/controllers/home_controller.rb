@@ -24,4 +24,8 @@ class HomeController < ApplicationController
     end
   	
   end
+  
+  def exchange
+  end
+  
 end

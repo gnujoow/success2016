@@ -1,15 +1,47 @@
-<%= @sbjtId %>
-<br>
-
-
-<% for i in 1..4 %>
-	<a href="<%= @url[i]%>">
-		<%= i %>학년
-	</a>
-	빈자리 : <%= @avail[i] %><br>
-<% end %>
-<br>
-<br>
+<h4>과목번호 <%= @sbjtId %>의 빈자리는</h4>
+<p><a href="http://kupis.konkuk.ac.kr/sugang/acd/cour/plan/CourLecturePlanInq.jsp?ltYy=2016&ltShtm=B01011&sbjtId=<%= @sbjtId %>" target="_blank">강의계획서 </a> </p>
+<br/><br/>
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<td>학년</td>
+			<td>빈자리</td>
+		</tr>
+	</thead>
+	<tbody>
+	<% for i in 1..4 %>
+		<tr>
+			<td>
+			<a href="<%= @url[i]%>">
+				<%= i %>학년
+			</a>
+			</td>
+			<td><%= @avail[i] %></td>
+		</tr>
+	<% end %>
+	</tbody>
+</table>
+<br/><br/>
 학년별 수강신청 이후에는 학년별 빈자리와 관계없이 수강신청을 할 수 있습니다.
 
 <a href="/">돌아가기</a>
+
+<br>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- react -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1377383149600056"
+     data-ad-slot="6480625722"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+<div class="mastfoot">
+<div class="inner">
+  <h4><a href="http://www.xdeca.com">X[deca]</a></h4>
+  <h5>만든이 <a href="http://gnujoow.github.io">@gnujoow</a></h5>
+</div>
+</div>

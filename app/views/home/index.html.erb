@@ -1,18 +1,37 @@
-<h1>계속 개발중입니다.</h1>
-<p>by <a href="http://gnujoow.github.io">@gnujoow</a></p>
-<p>이용 방법</p>
-<p>과목번호를 입력하면 학년별 빈자리를 볼 수 있습니다. 예) 1460</p>
-<form action="/home/search" target='_blank'>
-	<input type="text" name="sbjtId">
-	<input type="submit" value="yes">
+<h4>이용 방법</h4>
+<br/>
+<p>과목번호를 입력하면 학년별 빈자리를 볼 수 있습니다.</p>
+<br/><br/>
+<form class="form-inline" action="/home/search">
+	<div class="form-group" style="width:30vh;margin:auto;" style="display:inline;">
+		<input class="form-control" type="text" name="sbjtId" placeholder="과목번호 예) 1460">
+		<button class="btn btn-normal" type="submit">확인</button>
+	</div>
 </form>
-
+<br/><br/>
 <p>수강신청에 대한 자세한 내용은 <a href="http://www.konkuk.ac.kr/jsp/Haksa/haksa_02_01_01.jsp">우리학교 홈페이지</a>에서 확인하시기 바랍니다.</p>
 
 <a href="http://kupis.konkuk.ac.kr/sugang/acd/cour/time/SeoulTimetableInfo.jsp" target='_blank'>종합강의 시간표</a>
 
+<br>
+수강신청에 실패했다구요?<a href="/home/exchange"><font size="3" color="red">수업교환하기</font></a>에 들어가서 찾아보세요!
+<br>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v2.5&appId=326799794011912";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<br><br>
+<p><a href="https://www.facebook.com/likelionkonkuk/?fref=ts">멋쟁이사자처럼X건국대학교</a></p><div class="fb-like" data-href="https://www.facebook.com/likelionkonkuk/?fref=ts" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
 
 
-<br><br><br>
-
-<a href="https://www.facebook.com/likelionkonkuk/?fref=ts">멋쟁이사자처럼 X 건국대</a>
+<div class="mastfoot">
+<div class="inner">
+  <h4><a href="http://www.xdeca.com">X[deca]</a></h4>
+  <h5>만든이 <a href="http://gnujoow.github.io">@gnujoow</a></h5>
+</div>
+</div>
