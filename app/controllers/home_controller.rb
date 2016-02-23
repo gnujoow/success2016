@@ -8,6 +8,7 @@ class HomeController < ApplicationController
   def search
     @sbjtId = params[:sbjtId]
     @avail = Array.new
+    @current = Array.new
     @url = Array.new
     
     for i in 1..4
@@ -21,11 +22,13 @@ class HomeController < ApplicationController
       @apply = temp[0].to_i
       @capacity = temp[1].to_i
       @avail[i] = @capacity - @apply
+      @current[i] = @apply
     end
   	
   end
   
   def exchange
   end
+  
   
 end

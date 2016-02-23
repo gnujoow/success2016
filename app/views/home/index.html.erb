@@ -1,37 +1,71 @@
-<h4>이용 방법</h4>
-<br/>
-<p>과목번호를 입력하면 학년별 빈자리를 볼 수 있습니다.</p>
-<br/><br/>
-<form class="form-inline" action="/home/search">
-	<div class="form-group" style="width:30vh;margin:auto;" style="display:inline;">
-		<input class="form-control" type="text" name="sbjtId" placeholder="과목번호 예) 1460">
-		<button class="btn btn-normal" type="submit">확인</button>
-	</div>
-</form>
-<br/><br/>
-<p>수강신청에 대한 자세한 내용은 <a href="http://www.konkuk.ac.kr/jsp/Haksa/haksa_02_01_01.jsp">우리학교 홈페이지</a>에서 확인하시기 바랍니다.</p>
+<h1>현재 접속자가 과도하게 몰리고 있습니다 ㅠㅠ 이용에 불편을 드려 죄송합니다.</h1>
+<!--
+<div class="col-sm-1"></div>
+<div class="col-sm-5">
+  <p><a href="http://konkuk.likelion.net/" target="_blank"><img id="lionkonkuk" src="/assets/main_image.png"></a></p>
+  
+  <p>이 서비스는 <a href="http://konkuk.likelion.net/"><font size="3" color="green"> 멋쟁이사자처럼 x 건국대학교</font></a>에서 만들었어요 '-'</p>
+  <p>다가오는 새 학기!, 코딩을 하고 싶다구요? 하나도 몰라도 괜찮아요 이거 만든 저도 그랬어요. </p>
+  <p>멋쟁이 사자처럼 건국대학교 페이지 좋아요 누르고 신입회원 모집에 대한 소식을 받아보세요</p>
+  
+  
+  <div class="fb-like" data-href="https://www.facebook.com/likelionkonkuk/?fref=ts" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
+  <br/><br/>
+  
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v2.5&appId=326799794011912";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+  <br/><br/>
+  
+  <p>이 사이트를 만들게 된 뒷이야기가 <br>궁금하지 않으신가요?</p>
+  <p><a href="http://gnujoow.github.io/daily/2016/02/23/Daily-0/">만든이 블로그</a>에서 확인해 보세요</p>
+  
+</div>
 
-<a href="http://kupis.konkuk.ac.kr/sugang/acd/cour/time/SeoulTimetableInfo.jsp" target='_blank'>종합강의 시간표</a>
-
-<br>
-수강신청에 실패했다구요?<a href="/home/exchange"><font size="3" color="red">수업교환하기</font></a>에 들어가서 찾아보세요!
-<br>
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v2.5&appId=326799794011912";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+-->
+<div class="col-sm-5">
+  <h4>이용 방법</h4>
+  <br/>
+  <p>과목번호를 입력하면 학년별 빈자리를 볼 수 있습니다.</p>
+  <form class="form-inline" action="/home/search">
+  	<div class="form-group" style="width:30vh;margin:auto;" style="display:inline;">
+  		<input class="form-control" type="text" name="sbjtId" placeholder="과목번호 예) 1460">
+  		<button class="btn btn-normal" type="submit">확인</button>
+  	</div>
+  </form>
+  <br/>
+  <p>수강신청에 실패했다구요? 
+    <a href="/home/exchange"> 
+      <button type="button" class="btn btn-primary">수업교환하기</button>
+    </a>에 들어가서 찾아보세요!
+  </p>
+  <p>
+    수강신청에 대한 자세한 내용은
+    <a href="http://www.konkuk.ac.kr/jsp/Haksa/haksa_02_01_01.jsp" target='_blank'>
+      우리학교 홈페이지
+    </a>에서 확인하시기 바랍니다.
+  </p>
+  <a href="http://kupis.konkuk.ac.kr/sugang/acd/cour/time/SeoulTimetableInfo.jsp" target='_blank'>
+    <button type="button" class="btn btn-info">종합강의 시간표</button>
+  </a>
+  <p>
+    <a href="http://time.navyism.com/?host=kupis.konkuk.ac.kr" target='_blank'>
+      <button type="button" class="btn btn-warning">건국대학교 서버시간</button>
+    </a>
+  </p>
+  <br>
+</div>
 
 <br><br>
-<p><a href="https://www.facebook.com/likelionkonkuk/?fref=ts">멋쟁이사자처럼X건국대학교</a></p><div class="fb-like" data-href="https://www.facebook.com/likelionkonkuk/?fref=ts" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
-
 
 <div class="mastfoot">
-<div class="inner">
-  <h4><a href="http://www.xdeca.com">X[deca]</a></h4>
-  <h5>만든이 <a href="http://gnujoow.github.io">@gnujoow</a></h5>
-</div>
+  <div class="inner">
+  	<p>광고한다 건국대 짱짱 동아리 <a href="http://www.xdeca.com"><font size="3" color="white">X[deca]</a> </font>,<a href="https://www.facebook.com/likelionkonkuk"><font size="3" color="green"> 멋쟁이사자처럼 x 건국대학교</font></a> </p>
+    <h5>만든이 <a href="http://gnujoow.github.io">@gnujoow</a>블로그</h5>
+  </div>
 </div>

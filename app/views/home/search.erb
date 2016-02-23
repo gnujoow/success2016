@@ -1,32 +1,38 @@
-<h4>과목번호 <%= @sbjtId %>의 빈자리는</h4>
-<p><a href="http://kupis.konkuk.ac.kr/sugang/acd/cour/plan/CourLecturePlanInq.jsp?ltYy=2016&ltShtm=B01011&sbjtId=<%= @sbjtId %>" target="_blank">강의계획서 </a> </p>
-<br/><br/>
-<table class="table table-bordered">
-	<thead>
-		<tr>
-			<td>학년</td>
-			<td>빈자리</td>
-		</tr>
-	</thead>
-	<tbody>
-	<% for i in 1..4 %>
-		<tr>
-			<td>
-			<a href="<%= @url[i]%>">
-				<%= i %>학년
-			</a>
-			</td>
-			<td><%= @avail[i] %></td>
-		</tr>
-	<% end %>
-	</tbody>
-</table>
-<br/><br/>
-학년별 수강신청 이후에는 학년별 빈자리와 관계없이 수강신청을 할 수 있습니다.
+<div>
+	<div class="col-sm-2"></div>
+		<div class="col-sm-8">
+		<h4>과목번호 <%= @sbjtId %>의 빈자리는</h4>
+		<p><a href="http://kupis.konkuk.ac.kr/sugang/acd/cour/plan/CourLecturePlanInq.jsp?ltYy=2016&ltShtm=B01011&sbjtId=<%= @sbjtId %>" target="_blank">강의계획서 </a> </p>
+		<br/>
+		<table class="table table-bordered">
+			<thead>
+				<tr>
+					<td>학년</td>
+					<td>수강인원</td>
+					<td bgcolor="white"><font color="black">빈자리</font></td>
+				</tr>
+			</thead>
+			<tbody>
+			<% for i in 1..4 %>
+				<tr>
+					<td>
+					<a href="<%= @url[i]%>">
+						<%= i %>학년
+					</a>
+					<td><%= @current[i] %></td>
+					</td>
+					<td bgcolor="white"><b><font color="black"><%= @avail[i] %></font></b></td>
+				</tr>
+			<% end %>
+			</tbody>
+		</table>
+		<br>자리가 없나요? ㅠㅠ<a href="/home/exchange">  <button type="button" class="btn btn-primary">수업교환하기</button>
+</a>에 들어가서 다른 사람과 수업을 바꿔보세요<br>
+		학년별 수강신청 이후에는 학년별 빈자리와 관계없이 수강신청을 할 수 있습니다.<a href="/">돌아가기</a>
+	</div>
+</div>
 
-<a href="/">돌아가기</a>
 
-<br>
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- react -->
 <ins class="adsbygoogle"
@@ -40,8 +46,8 @@
 
 
 <div class="mastfoot">
-<div class="inner">
-  <h4><a href="http://www.xdeca.com">X[deca]</a></h4>
-  <h5>만든이 <a href="http://gnujoow.github.io">@gnujoow</a></h5>
-</div>
+  <div class="inner">
+  	<p>광고한다 건국대 짱짱 동아리 <a href="http://www.xdeca.com"><font size="3" color="white">X[deca]</a> </font>,<a href="https://www.facebook.com/likelionkonkuk"><font size="3" color="green"> 멋쟁이사자처럼 x 건국대학교</font></a> </p>
+    <h5>만든이 <a href="http://gnujoow.github.io">@gnujoow</a>블로그</h5>
+  </div>
 </div>

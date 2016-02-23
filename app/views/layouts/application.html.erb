@@ -25,6 +25,24 @@
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0-beta.1/jquery-ui.min.js">
+  <script>
+    $(function() {
+    var state = true;
+    $( "#lionkonkuk" ).hover(function() {
+      if ( state ) {
+        $( "#lionkonkuk" ).animate({
+          color: "#fff"
+        }, 1000 );
+      } else {
+        $( "#lionkonkuk" ).animate({
+          color: "#000"
+        }, 1000 );
+      }
+      state = !state;
+    });
+  });
+  </script>
 </head>
 <body>
 
@@ -39,7 +57,8 @@
               <h3 class="masthead-brand">성공학기!</h3>
               <nav>
                 <ul class="nav masthead-nav">
-                  <li class="active"><a href="/">Home</a></li>
+                  <li class="active"><a href="/">메인으로</a></li>
+                  <li><a href="/home/exchange">수업교환</a></li>
                   <!--
                   <li><a href="#">Features</a></li>
                   <li><a href="#">Contact</a></li>
@@ -48,28 +67,11 @@
               </nav>
             </div>
           </div>
-          
+
           <%= yield %>
           
-          <!--
-
-          <div class="inner cover">
-            <h1 class="cover-heading">Cover your page.</h1>
-            <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
-            <p class="lead">
-              <a href="#" class="btn btn-lg btn-default">Learn more</a>
-            </p>
-          </div>
-          
-          -->
-
-          
-
         </div>
-
       </div>
-
     </div>
-
 </body>
 </html>
