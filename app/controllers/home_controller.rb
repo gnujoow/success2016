@@ -1,15 +1,19 @@
 class HomeController < ApplicationController
   def index
-  	@yes = "oh yes oh yes"
+  #  url = "https://success2016-devcow.c9users.io/home/exchange"
+  #  redirect_to url
   end
 
   #과목번호 입력 받았을 때
   
   def search
+
+
     @sbjtId = params[:sbjtId]
     @avail = Array.new
     @current = Array.new
     @url = Array.new
+    @capacity = 0
     
     for i in 1..4
       @url[i] = "http://kupis.konkuk.ac.kr/sugang/acd/cour/aply/CourBasketInwonInq.jsp?ltYy=2016&ltShtm=B01011&sbjtId="+@sbjtId+"&promShyr="+i.to_s+"&fg=B"
@@ -24,7 +28,8 @@ class HomeController < ApplicationController
       @avail[i] = @capacity - @apply
       @current[i] = @apply
     end
-  	
+    
+    
   end
   
   def exchange
